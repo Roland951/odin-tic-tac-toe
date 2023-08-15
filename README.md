@@ -1,0 +1,1 @@
+This is a sample of a tic-tac-toe and the ninth exercise following The Odin Project course. Skills: HTML, CSS, Flexbox.

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div id="logo"><span>Tic-Tac-Toe</span></div>
+    <div id="container">
+        <div class="tile-container"><span class="tile"></span></div>
+        <div class="tile-container"><span class="tile"></span></div>
+        <div class="tile-container"><span class="tile"></span></div>
+        <div class="tile-container"><span class="tile"></span></div>
+        <div class="tile-container"><span class="tile"></span></div>
+        <div class="tile-container"><span class="tile"></span></div>
+        <div class="tile-container"><span class="tile"></span></div>
+        <div class="tile-container"><span class="tile"></span></div>
+        <div class="tile-container"><span class="tile"></span></div>
+    </div>
+    <div id="player1-container" class="player-container">
+        <div id="p1-text" class="player-name-container">Player 1</div>
+    </div>
+    <div id="player2-container" class="player-container">
+        <div id="p2-text" class="player-name-container">Player 2</div>
+    </div>
+    <div id="button-container">
+        <button type="button" id="open-modal">New Game</button>
+        <dialog id="modal">
+            <div id="modal-container">
+                <h2>Player Select</h2>
+                <div>
+                    <label for="p1-name-selection">Player 1 name:  (X)</label>
+                    <input type="text" name="p1-name-selection" id="p1-name-selection">
+                </div>
+                <div>
+                    <label for="p1color">Player 1 color:</label>
+                    <input type="range" min="0" max="360" value="180" id="p1-color">
+                </div>
+                <div>
+                    <span>Player 2 select:   (O)</span>
+                    <div id="player-control">
+                        <label for="p2-human">Human</label>
+                        <input type="radio" name="p2-selection" id="p2-human" checked>
+                        <label for="p2-ai">AI</label>
+                        <input type="radio" name="p2-selection" id="p2-ai" disabled>
+                    </div>
+                </div>
+                <div>
+                    <label for="p2-name-selection">Player 2 name:</label>
+                    <input type="text" name="p2-name-selection" id="p2-name-selection">
+                </div>
+                <div>
+                    <label for="p2-color">Player 2 color:</label>
+                    <input type="range" min="0" max="360" value="180" id="p2-color">
+                </div>
+                <div>
+                    <button type="button" id="submit">Play</button>
+                    <button type="button" id="close-modal">Close</button>
+                </div>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>
